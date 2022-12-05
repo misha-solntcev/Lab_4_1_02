@@ -22,11 +22,13 @@ namespace Lab_4_1_02
             {
                 array[i] = random.Next(10, 50);
                 if (i % 2 == 0 && array[i] > max)
-                    max = array[i];                
-            }
+                    max = array[i];
+            }            
             Console.WriteLine(max);
+
             foreach (var item in array)            
                 Console.Write(item + " ");
+
             Console.ReadKey();
         }
     }
