@@ -28,6 +28,11 @@ namespace Lab_4_1_02
 
             foreach (var item in array)            
                 Console.Write(item + " ");
+            Console.WriteLine("\n");
+
+            // Linq
+            var res = array.Where((x, i) => i % 2 == 0).Max();
+            Console.WriteLine(res);
 
             Console.ReadKey();
         }
